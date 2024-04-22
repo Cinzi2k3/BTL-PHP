@@ -1,0 +1,2387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/reponsive.css">
+    <link rel="stylesheet" href="../CSS/giohang.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.0.0-web/css/all.min.css">
+    <title>Điện máy xanh</title>
+</head>
+<body>
+    <div class="App">
+        <div class="Header">
+            <div class="container">
+                <div class="row navbar hide-on-tablet-mobile">
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            Cam kết giá tốt</li>
+                        <li class="navbar__list-item">
+                                <a href="" class="navbar__list-item-link">
+                                    <i class="fa-solid fa-truck"></i>
+                                    Miễn phí vận chuyển
+                                </a>
+                        </li>
+                        <li class="navbar__list-item">
+                                <a href="" class="navbar__list-item-link">
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                    Bảo hành tận nơi
+                                </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item">
+                            <span class="navbar__list-title--no">Kết nối</span>
+                            <a  class="navbar__list-icons-link" href="https://www.facebook.com/baoanh.bui.3363" target="blank">
+                                <i class="navbar__list-icons fa-brands fa-facebook">
+                                    <p class="navbar__list-icons-mesenger">Kết nối facebook</p>
+                                </i>
+                            </a>
+                            <a  class="navbar__list-icons-link" href="https://www.instagram.com/baoanh0911/saved/" target="blank">
+                                <i class="navbar__list-icons fa-brands fa-instagram">
+                                    <p class="navbar__list-icons-mesenger">Kết nối instagram</p>
+                                </i>
+                            </a>
+                        </li>  
+                        <li class="navbar__list-item navbar__list-item--Strong">
+                            <i class="fa-solid fa-user-plus"></i>
+                            <a href="/HTML/dangky.html"> Đăng ký </a>
+                        </li>
+                        <li class="navbar__list-item navbar__list-item--Strong">
+                            <i class="fa-solid fa-user"></i>
+                            <a href="../HTML/login.html" >Đăng nhập</a>
+                        </li>   
+                    </ul>    
+                </div>
+                <div class="Header-with-search row">
+                    <div class="Header__logo">
+                        <img class="Header__logo-img"  src="../IMG/logodienmayxanh.png">
+                    </div>
+                    <div class="Header__search hide-on-mobile">
+                        <input type="text" class="Header__search-input" placeholder="Nhập tên TiVi... cần tìm">
+                        <button class="Header__search-btn">
+                            <i class="Header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="Header__cart">
+                        <a href="../HTML/giohang.html">
+                            <i class="Header__cart-icon fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="Header-navbar hide-on-tablet-mobile">
+                <div class="container">
+                    <ul class="Header-navbar__list row">
+                        <li class="Header-navbar__item">
+                            <a class="Header-navbar__item-link" href="">
+                                <i class="navbar__list-icons fa-solid fa-list"></i>
+                                Danh mục sản phẩm
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu__item"><a class="submenu__item-link" href=""><i class="navbar__list-icons fa-solid fa-tv"></i>Tivi SamSung</a></li>
+                                <li class="submenu__item"><a class="submenu__item-link" href=""><i class="navbar__list-icons fa-solid fa-tv"></i>Tivi SoNy</a></li>
+                                <li class="submenu__item"><a class="submenu__item-link" href=""><i class="navbar__list-icons fa-solid fa-tv"></i>TiVi LG</a></li>
+                                <li class="submenu__item"><a class="submenu__item-link" href=""><i class="navbar__list-icons fa-solid fa-tv"></i>Tivi TCL- Casper</a></li>
+                                <li class="submenu__item"><a class="submenu__item-link" href=""><i class="navbar__list-icons fa-solid fa-tv"></i>Tivi Cao Cấp - Máy Chiếu</a></li>
+                                <li class="submenu__item">
+                                    <a class="submenu__item-link" href="">
+                                    <i class="navbar__list-icons fa-solid fa-headphones-simple"></i>
+                                    Loa- Âm Thanh <span class="sp-right">
+                                        <i class=" fas fa-caret-right"></i></span>
+                                    </a>
+                                    <ul class="submenu__item-list">
+                                        <li><a href="">Loa kéo</a></li>
+                                        <li><a href="">Loa SoNy</a></li>
+                                        <li><a href="">Dàn Karaoke - Micro - Amply</a></li>
+                                        <li><a href="">Loa thanh</a></li>
+                                        <li><a href="">Loa SamSung</a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu__item">
+                                    <a class="submenu__item-link" href="">
+                                    <i class="navbar__list-icons fa-solid fa-headphones-simple"></i>
+                                    Phụ Kiện Tivi <span class="sp-right">
+                                        <i class="fas fa-caret-right"></i></span>
+                                    </a>
+                                    <ul class="submenu__item-list">
+                                        <li><a href="">Cáp HDMI, cáp Tivi
+                                        <li><a href="">Khung treo Tivi</a></li>
+                                        <li><a href="">Điều khiển TV</a></li>
+                                        <li><a href="">Android TV Box</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="Header-navbar__item">
+                            <a class="Header-navbar__item-link"href="">
+                                <i class="navbar__list-icons fa-solid fa-phone-volume"></i>
+                                Bán hàng trực tuyến
+                            </a>
+                            </li>
+                        <li class="Header-navbar__item">
+                            <a class="Header-navbar__item-link" href="">
+                                <i class="fa-solid fa-money-check-dollar"></i>
+                                Mua trả góp
+                            </a>
+                        </li>
+                        <li class="Header-navbar__item">
+                            <a class="Header-navbar__item-link" href="">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                                Khuyến mãi</a>
+                            </li>
+                        <li class="Header-navbar__item">
+                            <a class="Header-navbar__item-link" href="">
+                            <i class="fa-solid fa-newspaper"></i>
+                            Tin tức
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slideshow">
+            <div class="container">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#demo" data-slide-to="0" class="active"></li>
+                      <li data-target="#demo" data-slide-to="1"></li>
+                      <li data-target="#demo" data-slide-to="2"></li>
+                      <li data-target="#demo" data-slide-to="3"></li>
+                    </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../IMG/slideshow_1.png" alt="" width="1100" height="400">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../IMG/slideshow_2.png" alt="" width="1100" height="400">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../IMG/slideshow_3.png" alt="" width="1100" height="400">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../IMG/slideshow_4.png" alt="" width="1100" height="400">
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  </div>
+            </div>
+        </div>
+        <div class="run-text container">
+            <div class="r-txt">
+                <b>Liên hệ với Điện máy xanh</b>
+                 <i class="fas fa-caret-right"></i>
+            </div>
+            <div class="r1-txt">
+                <marquee>Điện máy xanh &nbsp; Gọi mua: 1800.1061 (7:30 - 22:00)
+
+                    &nbsp;Kỹ thuật: 1800.1764 (7:30 - 22:00)
+                    
+                    &nbsp;Khiếu nại: 1800.1063 (8:00 - 21:30)
+                    
+                    &nbsp;Bảo hành: 1800.1065 (8:00 - 21:00) &nbsp; Địa chỉ: Dân Tiến
+                            Khoái Châu, Hưng Yên
+                </marquee>
+            </div>
+        </div>    
+        <div class="Container">
+            <div class="container">
+                <div class="Container__title ">
+                    <b>tivi bán chạy</b>
+                </div> 
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="../HTML/chitietsp.html" class="Home-product-item">
+                                <img src="../IMG/sanphambc1.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Samsung Smart TV Crystal UHD UA55AU8100
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">21.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-21%</span>
+                                    <span class="Home_product-item__price-curent" >17.100.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                                <!-- <div class="Home-product-item__muangay">
+                                    <a href="../HTML/chitietsp.html"><h4>Mua ngay</h4></a>
+                                </div> -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="../HTML/chitietsp1.html" class="Home-product-item">
+                                <img src="../IMG/sanphambc2.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi Samsung Crystal UHD 4K 43 inch UA43AU9000KXXV
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 43 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">15.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-17%</span>
+                                    <span class="Home_product-item__price-curent" >13.390.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/sanphambc3.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi QLED Samsung 4K 43 inch QA43Q60AAKXXV
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 55 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">21.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-20%</span>
+                                    <span class="Home_product-item__price-curent" >17.890.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/sanphambc4.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi LG 4K 55 inch 55UP7720PTC
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 55 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">21.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-34%</span>
+                                    <span class="Home_product-item__price-curent" >16.850.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/sanphambc5.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Google Tivi Sony 4K 43 inch KD-43X80J VN3
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 43 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">21.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-21%</span>
+                                    <span class="Home_product-item__price-curent" >17.100.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/sanphambc6.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Android Tivi Sony 4K 50 inch KD-50X75 VN3
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">18.500.000đ</span>
+                                    <span class="Home_product-item__price-percent">-16%</span>
+                                    <span class="Home_product-item__price-curent" >15.550.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>                        
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/sanphambc6.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Android Tivi Sony 4K 50 inch KD-50X75 VN3
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">18.500.000đ</span>
+                                    <span class="Home_product-item__price-percent">-16%</span>
+                                    <span class="Home_product-item__price-curent" >15.550.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>  
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/sanphambc6.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Android Tivi Sony 4K 50 inch KD-50X75 VN3
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">18.500.000đ</span>
+                                    <span class="Home_product-item__price-percent">-16%</span>
+                                    <span class="Home_product-item__price-curent" >15.550.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="Container__title">
+                    <b>tivi samsung</b>
+                </div>
+                <div class="Container__product row">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/samsung1.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi Samsung Crystal UHD 4K 43 inch UA43AU7000KXXV
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 43 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">13.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-14%</span>
+                                    <span class="Home_product-item__price-curent" >11.890.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/samsung2.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi Neo QLED Samsung 4K 55 inch QA55QN90AAKXXV
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 55 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">44.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-18%</span>
+                                    <span class="Home_product-item__price-curent" >36.890.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/samsung3.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi QLED Samsung 4K 65 inch QA65Q70AAKXXV
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">34.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-23%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        28.390.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/samsung4.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi QLED Samsung 4K 50 inch QA50Q80AAKXXV
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">28.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-22%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        22.890.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/samsung5.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi QLED Samsung 4K 75 inch QA75Q60AAKXXV
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 75 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">49.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-32%</span>
+                                    <span class="Home_product-item__price-curent" >38.890.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/samsung6.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi Samsung Crystal UHD 4K 50 inch UA50AU8000KXXV
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">18.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-18%</span>
+                                    <span class="Home_product-item__price-curent" >16.090.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/samsung6.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi Samsung Crystal UHD 4K 50 inch UA50AU8000KXXV
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">18.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-18%</span>
+                                    <span class="Home_product-item__price-curent" >16.090.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/samsung6.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi Samsung Crystal UHD 4K 50 inch UA50AU8000KXXV
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">18.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-18%</span>
+                                    <span class="Home_product-item__price-curent" >16.090.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container__title">
+                    <b>tivi lg</b>
+                </div>
+                <div class="Container__product row">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/lg1.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi NanoCell LG 4K 50 inch 50NANO77TPA
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">21.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-37%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        16.350.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/lg2.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi LG 4K 55 inch 55UP7550PTC
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 65 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">20.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-33%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        15.850.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/lg3.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi LG 4K 50 inch 50UP8100PTB
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">19.400.000đ</span>
+                                    <span class="Home_product-item__price-percent">-29%</span>
+                                    <span class="Home_product-item__price-curent" >13.850.000đ
+    
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/lg4.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi OLED LG 4K 55 inch OLED55C1PTB
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 55 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">48.200.000đ</span>
+                                    <span class="Home_product-item__price-percent">-28%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        35.850.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/lg5.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi LG 4K 50 inch 50UP7720PTC
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">18.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-29%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        14.850.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/lg6.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi NanoCell LG 4K 55 inch 55NANO86TPA
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 55 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">27.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-34%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        20.350.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/lg3.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi LG 4K 50 inch 50UP8100PTB
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">19.400.000đ</span>
+                                    <span class="Home_product-item__price-percent">-29%</span>
+                                    <span class="Home_product-item__price-curent" >13.850.000đ
+    
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/lg3.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi LG 4K 50 inch 50UP8100PTB
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">19.400.000đ</span>
+                                    <span class="Home_product-item__price-percent">-29%</span>
+                                    <span class="Home_product-item__price-curent" >13.850.000đ
+    
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        30
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container__title">
+                    <b>tivi Sony</b>
+                </div>
+                <div class="Container__product row">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/sony1.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> 100 xuất cuối tuần</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Android Tivi OLED Sony 4K 55 inch XR-55A90J VN3
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 55 inch</span>
+                                    
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">58.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-10%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        52.850.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        120
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/sony2.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Google Tivi Sony 4K 65 inch XR-65X90J VN3
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 65 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">36.300.000đ</span>
+                                    <span class="Home_product-item__price-percent">-27%</span>
+                                    <span class="Home_product-item__price-curent" >26.460.000đ
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        100
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/sony3.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> 200 xuất cuối tuần</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Android Tivi Sony 4K 48 inch KD-48A9S VN3
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 48 inch</span>
+                                    
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">43.400.000đ</span>
+                                    <span class="Home_product-item__price-percent">-20%</span>
+                                    <span class="Home_product-item__price-curent" >34.850.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        90
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/sony4.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi Sony 50 inch KDL50W660G/ZVN3
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">15.000.000đ</span>
+                                    <span class="Home_product-item__price-percent">-14%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        13.350.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        200
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/sanphambc5.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Google Tivi Sony 4K 43 inch KD-43X80J VN3
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 43 inch</span>
+                                    
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">17.400.000đ</span>
+                                    <span class="Home_product-item__price-percent">-17%</span>
+                                    <span class="Home_product-item__price-curent" >14.850.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        150
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/sony6.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                <span class="Home-product-item__sale-title"> 200 xuất cuối tuần</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Google Tivi Sony 8K 85 inch XR-85Z9J VN3
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 85 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">212.000.000đ</span>
+                                    <span class="Home_product-item__price-percent">-6%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        199.850.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        3
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/sony4.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi Sony 50 inch KDL50W660G/ZVN3
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">15.000.000đ</span>
+                                    <span class="Home_product-item__price-percent">-14%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        13.350.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        200
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/sony4.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi Sony 50 inch KDL50W660G/ZVN3
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">15.000.000đ</span>
+                                    <span class="Home_product-item__price-percent">-14%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        13.350.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        200
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Container__title">
+                    <b>Tivi TCL-Casper</b>
+                </div>
+                <div class="Container__product row">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href=""  class="Home-product-item">
+                                <img src="../IMG/Tcl1.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Android Tivi TCL 4K 43 inch 43P618
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 43 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">8.900.000đ</span>
+                                    <span class="Home_product-item__price-percent">-10%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                    9.990.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        50
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/Tcl2.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Android Tivi TCL 4K 50 inch 50P618
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 50 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">11.990.000đ</span>
+                                    <span class="Home_product-item__price-percent">-8%</span>
+                                    <span class="Home_product-item__price-curent" >10.990.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        320
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/Tcl3.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> 100 suất cuối tuần</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Android Tivi QLED TCL 4K 55 inch 55C725
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 55 inch</span>
+                                    
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">20.990.000đ</span>
+                                    <span class="Home_product-item__price-percent">-33%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        14.090.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        100
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/Casper1.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi Casper 43 inch 43FX5200
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 43 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">7.590.000đ</span>
+                                    <span class="Home_product-item__price-percent">-3%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        7.390.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        2
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/casper2.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm nhẹ</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Android Tivi Casper 4K 55 inch 55UG6100
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 55 inch</span>
+                                    
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">13.990.000đ</span>
+                                    <span class="Home_product-item__price-percent">-2%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        13.740.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        10
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/casper3.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> 100 suất cuối tuần</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi Casper 43 inch 43FX6200
+    
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 43 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">7.590.000đ</span>
+                                    <span class="Home_product-item__price-percent">-3%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        7.390.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        90
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>  
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/Casper1.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi Casper 43 inch 43FX5200
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 43 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">7.590.000đ</span>
+                                    <span class="Home_product-item__price-percent">-3%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        7.390.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        2
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/Casper1.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Smart Tivi Casper 43 inch 43FX5200
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 43 inch</span>
+                                    <span class="Home-product-item__compare-item">Full HD</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">7.590.000đ</span>
+                                    <span class="Home_product-item__price-percent">-3%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        7.390.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        2
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="Container__title">
+                    <b>phụ kiện tivi</b>
+                </div>
+                <div class="Container__product row">
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href=""  class="Home-product-item">
+                                <img src="../IMG/phukien1.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm nhẹ</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Dàn âm thanh Sony MHC-M40D
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 2.0 kênh</span>
+                                    <span class="Home-product-item__compare-item">500W</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Quà 100.000đ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">5.490.000đ</span>
+                                    <span class="Home_product-item__price-percent">-9%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        4.990.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        1000
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/phukien2.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> 100 suất trong tuần</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Dàn karaoke gia đình combo 6
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 500W</span>
+                                    
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Quà 108.000đ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">9.990.000đ</span>
+                                    <span class="Home_product-item__price-percent">-10%</span>
+                                    <span class="Home_product-item__price-curent" >8.990.000đ </span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        50
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/phukien3.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Loa du lịch SOUNDMAX M-6
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 500W</span>
+                                    
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">2.495.000đ</span>
+                                    <span class="Home_product-item__price-percent">-20%</span><br>
+                                    <span class="Home_product-item__price-curent" >   
+                                    1.990.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        90
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/phukien4.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm sốc</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Cáp chuyển Mini DisplayPort - HDMI Male 2 m e.VALU PS8402A 
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    
+                                    <span class="Home-product-item__compare-item">2 mét</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                    <p style="padding-top: 9px;">Quà tặng 100.000đ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">300.000đ</span>
+                                    <span class="Home_product-item__price-percent">-40%</span><br>
+                                    <span class="Home_product-item__price-curent" >180.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        70
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/phukien5.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> 200 xuất trong tuần</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Loa Bluetooth MozardX BM01 Đen 
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    <span class="Home-product-item__compare-item"> 36W</span>
+                                    
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">1.150.000đ</span>
+                                    <span class="Home_product-item__price-percent">-15%</span>
+                                    <span class="Home_product-item__price-curent" >1.000.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                        <i style="color: #bdbdbd;" class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        48
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/phukien6.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm trong tuần</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Loa kéo Paramax MK-368
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    
+                                    <span class="Home-product-item__compare-item">500W</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">7.790.000đ</span>
+                                    <span class="Home_product-item__price-percent">-10%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        7.000.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        100
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>   
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/phukien6.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm trong tuần</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Loa kéo Paramax MK-368
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    
+                                    <span class="Home-product-item__compare-item">500W</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">7.790.000đ</span>
+                                    <span class="Home_product-item__price-percent">-10%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        7.000.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        100
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div> 
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product-item">
+
+                            <a href="" class="Home-product-item">
+                                <img src="../IMG/phukien6.jpg" class="Home-product-item__img">
+                                <div class="Home-product-item__sale">
+                                    <img class="Home-product-item__sale-icon" src="../IMG/icon1.png" >
+                                    <span class="Home-product-item__sale-title"> giảm trong tuần</span>
+                                </div>
+                                <h4 class="Home-product-item__name">
+                                    Loa kéo Paramax MK-368
+                                </h4>
+                                <div class="Home-product-item__compare">
+                                    
+                                    <span class="Home-product-item__compare-item">500W</span>
+                                </div>
+                                <div class="Home-product-item__title-online">
+                                    <p>Online giá rẻ</p>
+                                </div>
+                                <div class="Home-product-item__price">
+                                    <span class="Home_product-item__price-old">7.790.000đ</span>
+                                    <span class="Home_product-item__price-percent">-10%</span>
+                                    <span class="Home_product-item__price-curent" >
+                                        7.000.000đ</span>
+                                </div>
+                                <div class="Home-product-item__action">
+                                    <div class="Home-product-item__rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <span class="Home-product-item__like">
+                                        100
+                                    </span>
+                                </div>
+                                <div class="Home-product-item__sale-off">
+                                    <img src="../IMG/docquyen.png" >   
+                                </div>
+                            </a>
+                        </div>
+                    </div>  
+                </div>   
+            </div>
+        </div>
+        <div class="Footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h2 class="Footer__heading">Thông tin chung</h2>
+                        <hr>
+                        <ul class="Footer-list">
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="">
+                                    Giới thiệu về cửa hàng 
+                                </a>   
+                            </li>
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="">
+                                    Thông tin liên hệ
+                                </a>  
+                            </li>
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="">
+                                    Thông tin tuyển dụng
+                                </a>  
+                            </li>
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="">
+                                    Tin tức
+                                </a>  
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="Footer__heading">Chính sách mua hàng</h2>
+                        <hr>
+                        <ul class="Footer-list">
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="">
+                                    Chính sách bảo hành 
+                                </a>   
+                            </li>
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="">
+                                    Chính sách đổi trả hàng, hoàn tiền
+                                </a>  
+                            </li>
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="">
+                                    Phương thức thanh toán
+                                </a>  
+                            </li>
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="">
+                                    Vận chuyển, lắp đặt
+                                </a>  
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="Footer__heading">Hỗ trợ khách hàng</h2>
+                        <hr>
+                        <ul class="Footer-list">
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="">
+                                    Hướng dẫn mua hàng online
+                                </a>   
+                            </li>
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="">
+                                    Thông tin khuyến mãi
+                                </a>  
+                            </li>
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="">
+                                    Gửi yêu cầu bảo hành
+                                </a>  
+                            </li>
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="">
+                                    Góp ý, khiếu nại
+                                </a>  
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="Footer__heading">Theo dõi chúng tôi</h2>
+                        <hr>
+                        <ul class="Footer-list">
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="https://www.facebook.com/dienmayxanhcom">
+                                    <i style="color: blue;" class=" fa-brands fa-facebook-square">
+                                    </i>
+                                    Fanpage Điện máy xanh
+                                </a>   
+                            </li>
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="https://www.youtube.com/channel/UCggNkBGDPfgxUbHBjGQU5sA">
+                                    <i style="color: red;" class=" fa-brands fa-youtube"></i>
+                                    Điện máy xanh
+                                </a>  
+                            </li>
+                            <li class="Footer-items">
+                                <a class="Footer-items__link" href="">
+                                    <i class="fa-brands fa-facebook-messenger"></i>
+                                    Chat với tư vấn viên
+                                </a>  
+                        </ul>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
