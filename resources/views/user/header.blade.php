@@ -21,7 +21,7 @@
             <ul class="navbar__list">
                 <li class="navbar__list-item">
                     <span class="navbar__list-title--no">Kết nối</span>
-                    <a  class="navbar__list-icons-link" href="https://www.facebook.com/profile.php?id=100010618308046" target="blank">
+                    <a  class="navbar__list-icons-link" href="https://www.facebook.com/cinzi610" target="blank">
                         <i class="navbar__list-icons fa-brands fa-facebook">
                             <p class="navbar__list-icons-mesenger">Kết nối facebook</p>
                         </i>
@@ -34,7 +34,7 @@
                 </li>  
                 <li class="navbar__list-item navbar__list-item--Strong">
                     <i class="fa-solid fa-user-plus"></i>
-                    <a href="/"> Đăng ký </a>
+                    <a href="/register"> Đăng ký </a>
                 </li>
                 <li class="navbar__list-item navbar__list-item--Strong">
                     <i class="fa-solid fa-user"></i>
@@ -49,12 +49,28 @@
                 </a>
                
             </div>
-            <div class="Header__search hide-on-mobile">
+            <!-- <div class="Header__search hide-on-mobile">
                 <input type="text" class="Header__search-input" placeholder="Nhập tên TiVi... cần tìm">
                 <button class="Header__search-btn">
                     <i class="Header__search-btn-icon fa-solid fa-magnifying-glass"></i>
                 </button>
+            </div> -->
+            <div class="Header__search hide-on-mobile">
+                <form action="{{ route ('user/search') }}" method="post" style="width: 100%">
+                    @csrf
+                    <div class="Header__search hide-on-mobile">
+                        
+                        <input type="text" name="keywords_submit" id="" class="Header_search-input" placeholder="Nhập tên TiVi...">
+                        <button class="Header__search-btn">
+                    <i class="Header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                </button>
+                    
+                    
+                    </div>
+                </form>
+                
             </div>
+            
             <div class="Header__cart">
                 <a href="{{route('user/cart')}}">
                     <i class="Header__cart-icon fa-solid fa-cart-shopping"></i>
@@ -132,6 +148,43 @@
 </script>
 
 <style>
+    .Header__search {
+    position: relative;
+}
+
+.Header_search-input {
+    width: calc(100% - 50px); /* Để lại không gian cho nút tìm kiếm */
+    padding: 8px 12px; /* Thêm padding cho input */
+    border: 1px solid #ccc; /* Đường viền input */
+    border-radius: 5px; /* Bo tròn góc */
+    font-size: 16px; /* Kích thước font */
+    outline: none; /* Loại bỏ đường viền focus */
+}
+
+.Header__search-btn {
+    position: absolute; /* Đặt nút tìm kiếm ở vị trí tuyệt đối */
+    right: -2.2; /* Đẩy nút tìm kiếm sang phải */
+    top: -2.5; /* Đẩy nút tìm kiếm lên trên */
+    width: 50px; /* Độ rộng của nút */
+    height: 100%; /* Chiều cao của nút bằng chiều cao của input */
+    background-color: #007bff; /* Màu nền của nút */
+    border: none; /* Loại bỏ đường viền */
+    border-top-right-radius: 5px; /* Bo tròn góc của góc trên bên phải */
+    border-bottom-right-radius: 5px; /* Bo tròn góc của góc dưới bên phải */
+    cursor: pointer; /* Con trỏ chuột thành hình bàn tay khi hover */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+.Header__search-btn:hover {
+    background-color: #0056b3; /* Màu nền của nút khi hover */
+}
+
+.Header__search-btn-icon {
+    color: #fff; /* Màu của biểu tượng trong nút */
+    font-size: 20px; /* Kích thước của biểu tượng */
+    vertical-align: middle; /* Canh giữa theo chiều dọc */
+}
+
     .alert {
         position: fixed;
         top: 50%;

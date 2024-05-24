@@ -3,7 +3,7 @@
 @section('admin.content')
 <div class="container-fluid" id="container-wrapper">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-      <h1 class="h3 mb-0 text-gray-800">QUẢN LÝ KHÁCH HÀNG</h1>
+      <h1 class="h3 mb-0 text-gray-800">QUẢN LÝ NHÀ CUNG CẤP</h1>
       {{-- <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="./">Home</a></li>
         <li class="breadcrumb-item">Tables</li>
@@ -17,41 +17,36 @@
       <div class="col-lg-12">
         <div class="card mb-4">
           <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-            <h6 class="m-0 font-weight-bold text-primary">Quản lý KHÁCH HÀNG</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Quản lý NHÀ CUNG CẤP</h6>
           </div>
-          <p style="padding-left:20px;color: black"><a class=" btn btn-sm btn-primary" href="{{route('admin.khachhang.create')}}">Thêm</a></p>
+          <p style="padding-left:20px;color: black"><a class=" btn btn-sm btn-primary" href="{{route('admin.nhacungcap.create')}}">Thêm</a></p>
           <div class="table-responsive p-3">
             <table class="table align-items-center table-flush" id="dataTable">
               <thead class="thead-light">
                 <tr>
-                  <th>Mã khách hàng</th>
-                  <th>Tên khách hàng</th>
+                  <th>Mã nhà cung cấp</th>
+                  <th>Tên nhà cung cấp</th>
                   <th>Số điện thoại</th>
                   <th>Địa chỉ</th>
-                  <th>Email</th>
-                  <th>Đơn Hàng</th>
+            
                   <th>Chức năng</th>
     
                 </tr>
               </thead>
               <tbody>
-                @foreach ($kh as $sp)
+                @foreach ($cc as $sp)
                 <tr>
-                    <td>{{$sp->MaKhachHang}}</td>
-                    <td>{{$sp->TenKhachHang}}</td>
+                    <td>{{$sp->MaNhaCungCap}}</td>
+                    <td>{{$sp->TenNhaCungCap}}</td>
                     <td>{{$sp->SoDienThoai}}</td>
                     <td>{{$sp->DiaChi}}</td>
-                    <td>{{$sp->Email}}</td>
-                    <td> <a href="{{ route('admin.khachhang.donhang', $sp->MaKhachHang) }}" class="btn btn-warning" style="margin-right: 16px">
-                          <i class="fa fa-solid fa-eye"></i> </a>
-                    </td>
-
-
+                    
+                
 
                     <td style="color: black">
                       
-                        <a onclick="return confirm('Bạn có muốn xóa không?')" class=" btn btn-danger" style="background-color: red" href="{{route('admin.khachhang.destroy',$sp->MaKhachHang)}}">Xóa</a>
-                        <a class=" btn btn-info" href="{{route('admin.khachhang.edit',$sp->MaKhachHang)}}">Sửa</a>         
+                        <a onclick="return confirm('Bạn có muốn xóa không?')" class=" btn btn-danger" style="background-color: red" href="{{route('admin.nhacungcap.destroy',$sp->MaNhaCungCap)}}">Xóa</a>
+                        <a class=" btn btn-info" href="{{route('admin.nhacungcap.edit',$sp->MaNhaCungCap)}}">Sửa</a>         
                       
                     </td>
                     

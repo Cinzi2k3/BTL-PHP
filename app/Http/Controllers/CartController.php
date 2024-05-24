@@ -168,7 +168,7 @@ class CartController extends Controller
 
            
         }
-        session()->flash('success', 'Thanh toán thành công!');
+        session()->flash('success', ' Bạn đã đặt hàng thành công!');
        
          return redirect()->route('home');
     }

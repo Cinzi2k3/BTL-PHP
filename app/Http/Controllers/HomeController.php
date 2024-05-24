@@ -40,6 +40,17 @@ class HomeController extends Controller
         // return view('FptShop/productDetails', [ 'sanpham' => $sanpham, 'thongsokythuat' => $thongsokythuat]);
         return view('user/detail', [ 'loaisp' => $loaisp, 'sanpham' => $sanpham,'getlsp' => $getlsp]);
     }
+    public function search (Request $request){
+        $input = $request->keywords_submit;
+        $loaisp=LoaiSanPhamModel::all();
+        $search = SanphamModel::join('thongsokythuat', 'sanpham.MaSanPham', '=', 'thongsokythuat.MaSanPham')
+            ->select('sanpham.*', 'thongsokythuat.KichCo', 'thongsokythuat.DoPhanGiai')
+            ->orderBy('sanpham.MaSanPham', 'asc')
+            ->where('sanpham.TenSanPham', 'like', '%' . $input . '%')
+            ->get();
+    
+        return view('user/search', ['search' => $search, 'loaisp'=> $loaisp]);
+    }
     
     public function contact(){
         $loaisp=LoaiSanPhamModel::all();
@@ -49,5 +60,10 @@ class HomeController extends Controller
         $loaisp = LoaiSanPhamModel::all();
         return view('user/login', ['loaisp' => $loaisp]);
     }
+    public function register(){
+        $loaisp = LoaiSanPhamModel::all();
+        return view('user/register', ['loaisp' => $loaisp]);
+    }
+
     
 }

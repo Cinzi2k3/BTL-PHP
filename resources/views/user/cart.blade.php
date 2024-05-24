@@ -25,7 +25,7 @@
                     @foreach($cartItems as $item)
                     <tr >
                         <td class="cart_product">
-                            <a href=""><img src="/upload/{{$item->attributes->image}}" alt="" style="width: 120px;margin-right:40px;"></a>
+                            <a href=""><img src="/Upload/{{$item->attributes->image}}" alt="" style="width: 120px;margin-right:40px;"></a>
                         </td>
                         <td class="cart_description"></td>
                             <h4><a href="">{{$item -> name}}</a></h4>
@@ -42,7 +42,7 @@
                                     {{-- <a class="cart_quantity_up"  href=""> + </a> --}}
                                     <input style="width:80px;height: 33px;"  class="cart_quantity_input" type="number" name="quantity" value="{{$item -> quantity}}" autocomplete="off" size="1">
                                     {{-- <a class="cart_quantity_down"  href=""> - </a> --}}
-                                    <button typpe="submit" class="btn btn-default update" href="" style="font-size: 16px;margin:0px;">cập nhật</button>
+                                    <button typpe="submit" class="btn btn-default update" href="" style="font-size: 16px;margin:0px;">Cập nhật</button>
                                     {{-- <button type="submit" class="btn-update">update</button> --}}
                                 </div>
                             </form>

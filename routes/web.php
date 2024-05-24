@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +21,8 @@ Route::get('/TQ', function () {
     return view('admin/index');
 });
 
+
+
 Route::controller(App\Http\Controllers\HomeController::class)->group(function(){
     Route::get('/','index')->name('home');
     Route::get('/categories/{Maloai_id?}','categories')->name('categories');
@@ -27,9 +30,15 @@ Route::controller(App\Http\Controllers\HomeController::class)->group(function(){
     Route::get('/detail/{id?}','detail')->name('detail');
     Route::get('/contact','contact')->name('contact');
     Route::get('/login','login')->name('login');
+    Route::get('/register','register')->name('register');
+    Route::post('/search', 'search') -> name('user/search');
+
+
+
     
       
 });
+
 
 Route::controller(App\Http\Controllers\CartController::class) -> group(function(){
     Route::get('/cart', 'cart') -> name('user/cart');
@@ -103,6 +112,16 @@ Route::controller(App\Http\Controllers\KhachHangController::class)->group(functi
     Route::get('/admin/khachhang/{id}/donhang',  'donhangcuakhachhang')->name('admin.khachhang.donhang');
 
 });
+Route::controller(App\Http\Controllers\NhaCCController::class)->group(function(){
+    Route::get('/admin/nhacungcap/index','index')->name('admin.nhacungcap.index'); 
+    Route::get('/admin/nhacungcap/create', 'create') -> name('admin.nhacungcap.create');
+    Route::post('/admin/nhacungcap/store', 'store') -> name('admin.nhacungcap.store');
+    
+    Route::get('/admin/nhacungcap/edit/{id}', 'edit') -> name('admin.nhacungcap.edit');
+    Route::post('/admin/nhacungcap/update/{id}', 'update') -> name('admin.nhacungcap.update');
+
+    Route::get('/admin/nhacungcap/delete/{id}', 'destroy') -> name('admin.nhacungcap.destroy'); 
+});
 Route::controller(App\Http\Controllers\KhoController::class)->group(function(){
     Route::get('/admin/kho/index','index')->name('admin.kho.index'); 
     Route::get('/admin/kho/create', 'create') -> name('admin.kho.create');
@@ -124,6 +143,31 @@ Route::controller(App\Http\Controllers\HoaDonBanController::class) -> group(func
     Route::get('/admin/hoadonban/detail/{id}', 'detailhoadonban') -> name('admin.hoadonban.detail');
 
 });
+Route::controller(App\Http\Controllers\HoaDonNhapController::class) -> group(function(){
+    Route::get('/admin/hoadonnhap/index', 'index') -> name('admin.hoadonnhap.index');
+
+    Route::get('/admin/hoadonnhap/create', 'create') -> name('admin.hoadonnhap.create');
+    Route::post('/admin/hoadonnhap/store', 'store') -> name('admin.hoadonnhap.store');
+
+    Route::get('/admin/hoadonnhap/detail/{id}', 'detail') -> name('admin.hoadonnhap.detail') ;
+
+
+});
+
+Route::controller(App\Http\Controllers\ThongKeController::class) -> group(function(){
+    Route::get('/admin/thongke/index', 'index') -> name('admin.thongke.index');
+    
+    Route::post('/admin/thongke/theongay', 'theongay') ->name('admin.thongke.theongay');
+
+    Route::get('/admin/thongke/theothang', 'theothangget') ->name('admin.thongke.theothangget');
+
+    Route::post('/admin/thongke/theothang', 'theothang') ->name('admin.thongke.theothang');
+
+    Route::get('/admin/thongke/khachhang', 'khachhang') ->name('admin.thongke.khachhang');
+
+
+});
+
 
 
 

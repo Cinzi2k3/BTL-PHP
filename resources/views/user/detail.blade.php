@@ -99,10 +99,12 @@
                             </div>
                         </div>
                     </div>
+                    
                      <div class="detail-product-item__compare">
                         <span class="detail-price-item__compare-item1"> Trả góp 0%</span>
                         <span class="detail-price-item__compare-item2">Mới</span>
                     </div> 
+                    
                     <form action="{{ route ('user/addCart')  }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <input type="hidden" name="MaSanPham" value="{{$sanpham -> MaSanPham}}">

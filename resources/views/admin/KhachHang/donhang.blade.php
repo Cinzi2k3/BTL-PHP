@@ -27,7 +27,9 @@
                                 Đã xác nhận
                             @endif
                         </td>
-                        <td><a href="{{ route ('admin.donhang.chitietdonhang', $donhang -> MaDonHang) }}">Chi Tiết</a></td>
+                        <td><a href="{{route ('admin.donhang.chitietdonhang', $donhang->MaDonHang) }}" class="btn btn-warning" style="margin-right: 16px">
+                        <i class="fa fa-solid fa-eye"></i></a>
+                      </td>
                     </tr>
                 @empty
                     <tr>

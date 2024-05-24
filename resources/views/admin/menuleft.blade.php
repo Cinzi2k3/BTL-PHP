@@ -7,20 +7,15 @@
     </a>
     <hr class="sidebar-divider my-0">
     <li class="nav-item">
-      <a class="nav-link" href="/">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Giao diện người dùng</span></a>
-    </li>
-    <hr class="sidebar-divider">
-    <div class="sidebar-heading">
-      Features
-    </div>
-    <li class="nav-item">
       <a class="nav-link" href="/TQ">
       <i class="fas fa-globe"></i>
         <span>Tổng Quát</span>
       </a>
     </li>
+    <hr class="sidebar-divider">
+    <div class="sidebar-heading">
+      Chức năng
+    </div>
     <li class="nav-item">
       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
         aria-expanded="true" aria-controls="collapseBootstrap">
@@ -41,9 +36,21 @@
       </a>
     </li>
     <li class="nav-item">
+      <a class="nav-link" href="{{route('admin.hoadonnhap.index')}}">
+      <i class="fas fa-file-invoice"></i>
+        <span>Quản lí hóa đơn nhập</span>
+      </a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link" href="{{route('admin.khachhang.index')}}">
         <i class="fas fa-fw fa-user"></i>
         <span>Quản lí khách hàng</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{route('admin.nhacungcap.index')}}">
+      <i class="fas fa-truck"></i>
+        <span>Quản lí nhà cung cấp</span>
       </a>
     </li>
     <li class="nav-item">
@@ -67,8 +74,9 @@
       <div id="collapseTable" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
           {{-- <h6 class="collapse-header">Tables</h6> --}}
-          <a class="collapse-item" href="simple-tables.html">Simple Tables</a>
-          <a class="collapse-item" href="datatables.html">DataTables</a>
+          <a class="collapse-item" href="{{ route ('admin.thongke.index') }}">Theo ngày</a>
+          <a class="collapse-item" href="{{ route ('admin.thongke.theothang') }}">Theo tháng</a>
+          <a class="collapse-item" href="{{ route ('admin.thongke.khachhang') }}">Theo khách hàng</a>
         </div>
       </div>
     </li>

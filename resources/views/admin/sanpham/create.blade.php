@@ -8,7 +8,7 @@
       <h6 class="m-0 font-weight-bold text-primary">Thêm sản phẩm</h6>
     </div>
     <div class="card-body">
-      <form action="{{route('admin.sanpham.store}}')" method="post" enctype="multipart/form-data">
+      <form action="{{route('admin.sanpham.store')}}" method="post" enctype="multipart/form-data">
         @csrf 
         {{-- // phải có đối với tất cải file post --}}
         {{-- <div class="form-group">

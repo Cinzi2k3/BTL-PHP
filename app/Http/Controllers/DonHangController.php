@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Usser\SanPham;
 use App\Models\Usser\DonHang;
 use App\Models\Usser\ChiTietDonHang;
 use App\Models\Usser\HoaDonBan;

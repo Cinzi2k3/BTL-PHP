@@ -101,7 +101,7 @@
             <div class="box-left">Kích thước màn hình</div>
             <div class="box-right">
                 @foreach ($db as $dssp)
-                <div class="name">{{$dssp -> KichCo}}</div>
+                <div class="name">{{$dssp ->thongsokythuat -> KichCo}}</div>
                 @endforeach
                 
             </div>
@@ -110,7 +110,7 @@
             <div class="box-left">Độ phân giải</div>
             <div class="box-right">
                 @foreach ($db as $dssp)
-                <div class="name">{{$dssp->DoPhanGiai}}</div>
+                <div class="name">{{$dssp->thongsokythuat ->DoPhanGiai}}</div>
                 @endforeach
                
                 

@@ -18,7 +18,7 @@ class HoaDonBan extends Model
 
     public function chitiethoadonban()
     {
-        return $this->hasMany(ChiTietHoaDonBan::class, 'MaChiTietHoaDonBan');
+        return $this->hasMany(ChiTietHoaDonBan::class, 'MaHoaDonBan');
     }
 
     public function khachhang()

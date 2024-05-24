@@ -36,13 +36,12 @@
                 <tr>
                     <td>{{$k->MaKho}}</td>
                     <td>{{$k->TenKho}}</td>
-
                     <td>{{$k->DiaChi}}</td>
-
-                    <td><a href="{{ route('admin.kho.chitietkho', $k->MaKho) }}">Chi tiết</a></td>
-
+                    <td><a href="{{route ('admin.kho.chitietkho', $k->MaKho) }}" class="btn btn-warning" style="margin-right: 16px">
+                        <i class="fa fa-solid fa-eye"></i></a>
+                    </td>
                     <td style="color: black">
-                      
+                   
                         <a onclick="return confirm('Bạn có muốn xóa không?')" class=" btn btn-danger" style="background-color: red" href="{{route('admin.kho.destroy',$k->MaKho)}}">Xóa</a>
                         <a class=" btn btn-info" href="{{route('admin.kho.edit',$k->MaKho)}}">Sửa</a>         
                       
