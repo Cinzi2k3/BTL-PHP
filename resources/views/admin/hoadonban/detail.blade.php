@@ -39,7 +39,7 @@
                                     <td>{{$item -> MaSanPham }}</td>
                                     <td>{{$item -> sanpham -> TenSanPham}}</td>
                                     <td>{{$item -> SoLuong}}</td>
-                                    <td>{{number_format ($item  -> ThanhTien,3,",")}}đ</td>
+                                    <td>{{number_format ($item  -> ThanhTien, 0, '', ',')}}đ</td>
                                     <td>
                                         <img src="/Upload/{{$item -> sanpham -> Anh}}" style="width: 100px; height: 100px;" alt="">
                                     </td>

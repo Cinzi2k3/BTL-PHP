@@ -40,7 +40,7 @@
                     <td>{{$sp-> MaSanPham}}</td>
                     <td>{{$sp-> TenSanPham}}</td>
                     <td><img src="/asset/IMG/{{$sp->Anh}}" ></td>
-                    <td>{{number_format ($sp-> Gia,3,",")}}</td>
+                    <td>{{ number_format($sp->Gia, 0, '', ',') }}</td>
                     <td>{!! strip_tags($sp->Mota) !!}</td>
                     <td>
                     <a href="{{ route('admin.sanpham.show', $sp->MaSanPham) }}" class="btn btn-primary">Chi tiết</a></td>

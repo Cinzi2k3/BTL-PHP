@@ -32,7 +32,7 @@
                     <div class="col-md-6" >
                         <h3>Tổng doanh thu trong ngày: 
                             @if(isset($tongtien))
-                                {{number_format($tongtien,3,",")}}đ
+                                {{number_format($tongtien, 0, '', ',')}}đ
                             @endif 
                         </h3>
                         <span>Tổng số lượng sản phẩm bán được trong ngày: 
@@ -66,7 +66,7 @@
                                         <td>{{$item -> khachhang -> TenKhachHang}}</td>
                                         <td>{{$item -> khachhang -> DiaChi}}</td>
                                         <td>{{$item -> khachhang -> Email}}</td>
-                                        <td>{{number_format($item -> ThanhTien,3,"," )}}đ</td>
+                                        <td>{{number_format($item -> ThanhTien, 0, '', ',' )}}đ</td>
                                         <td>
                                             <a href="{{route('admin.hoadonban.detail', ['id' => $item->MaHoaDonBan]) }}" class="btn btn-warning" >
                                                 <i class="fa fa-solid fa-eye"></i>

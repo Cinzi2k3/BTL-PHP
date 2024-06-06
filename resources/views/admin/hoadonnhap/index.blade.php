@@ -38,7 +38,7 @@
                                     <td>{{$hdn -> nhacungcap -> TenNhaCungCap}}</td>
                                     <td>{{$hdn -> nhacungcap -> DiaChi}}</td>
                                     <td>{{$hdn -> nhacungcap -> SoDienThoai}}</td>
-                                    <td>{{number_format($hdn -> ThanhTien,3,",")}}</td>
+                                    <td>{{number_format($hdn -> ThanhTien, 0, '', ',')}}</td>
                                     <td>
                                         <a href="{{route ('admin.hoadonnhap.detail', $hdn -> MaHoaDonNhap) }}" class="btn btn-warning" style="margin-right: 16px">
                                             <i class="fa fa-solid fa-eye"></i>

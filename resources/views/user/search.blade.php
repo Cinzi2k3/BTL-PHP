@@ -36,9 +36,9 @@
                             <p>Online giá rẻ</p>
                         </div>
                         <div class="Home-product-item__price">
-                            {{-- <span class="Home_product-item__price-old">{{number_format ($sanpham-> Gia,3,",")}}đ</span>
+                            {{-- <span class="Home_product-item__price-old">{{number_format ($sanpham-> Gia, 0, '', ',')}}đ</span>
                             <span class="Home_product-item__price-percent">-21%</span> --}}
-                            <span class="Home_product-item__price-curent" >{{number_format ($sanpham-> Gia,3,",")}}₫</span>
+                            <span class="Home_product-item__price-curent" >{{number_format ($sanpham-> Gia, 0, '', ',')}}₫</span>
                         </div>
                         <div class="Home-product-item__action">
                             <div class="Home-product-item__rating">

@@ -16,7 +16,7 @@
                     <div class="container__product-bigimg">
                         <img class="container__product-img" src="/Upload/{{$sanpham -> Anh}}" >
                     </div>
-                    <div class="container__product-smallimg">
+                    <!-- <div class="container__product-smallimg">
                         <div class="container__product-listimg" style="margin: 0px 3px 0px 0px;">
                             <img src="/asset/IMG/sanpham1.jpg" class="container__product-img1">
                         </div>
@@ -35,7 +35,7 @@
                         <div class="container__product-listimg">
                             <img src="/asset/IMG/sanpham6.jpg" class="container__product-img1">
                         </div>
-                    </div>
+                    </div> -->
                     <div class="container__product-content">
                         <ul> <h4>Đặc điểm nổi bật</h4>
                             <li>{!! strip_tags(explode("\n", $sanpham->Mota)[0]) !!}</li>
@@ -81,7 +81,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-6 detail-price-right__price-right">
                             <div class="detail-price-right__curent" style="font-size: 30px;">
-                                {{number_format ($sanpham -> Gia,3,"," )}}₫
+                                {{number_format ($sanpham -> Gia,0,'',',')}}₫
                             </div>
                             <!-- <div class="detail-price-right__old">
                                 <span class="detail-price-right__percent">
@@ -252,7 +252,7 @@
                                 <div class="Home-product-item__price">
                                     {{-- <span class="Home_product-item__price-old">13.900.000đ</span>
                                     <span class="Home_product-item__price-percent">-14%</span> --}}
-                                    <span class="Home_product-item__price-curent" >{{number_format ($dssp->Gia,3,",")}}</span>
+                                    <span class="Home_product-item__price-curent" >{{number_format ($dssp->Gia, 0, '', ',')}}</span>
                                 </div>
                                 <div class="Home-product-item__action">
                                     <div class="Home-product-item__rating">

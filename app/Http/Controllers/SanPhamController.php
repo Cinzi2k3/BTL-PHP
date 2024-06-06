@@ -125,6 +125,7 @@ class SanPhamController extends Controller
         $sp -> Gia = $input['Gia'];
         $sp -> Mota = $input['Mota'];
         $sp -> save();
+        
 
         $tskt -> KichCo = $input['KichCo'];
         $tskt -> DoPhanGiai = $input['DoPhanGiai'];

@@ -115,8 +115,8 @@
                 <td>{{$index++}}</td>
                 <td>{{$item -> sanpham -> TenSanPham}}</td>
                 <td>{{$item -> SoLuong}}</td>
-                <td>{{number_format($item -> ThanhTien,3,",")}}đ</td>
-                <td>{{number_format($item -> SoLuong * $item -> ThanhTien,3,",")}}đ</td>
+                <td>{{number_format($item -> ThanhTien, 0, '', ',')}}đ</td>
+                <td>{{number_format($item -> SoLuong * $item -> ThanhTien, 0, '', ',')}}đ</td>
             </tr>
         @endforeach
         
@@ -125,7 +125,7 @@
             <td></td>
             <td></td>
             <td class="dam">Tổng</td>
-            <td class="dam"><label id="tien">{{number_format($dh -> ThanhTien,3,",")}}đ</label></td>
+            <td class="dam"><label id="tien">{{number_format($dh -> ThanhTien, 0, '', ',')}}đ</label></td>
         </tr>
     </table>
     <div class="doi dam ky">Người mua hàng</div>

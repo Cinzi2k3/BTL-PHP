@@ -14,7 +14,7 @@
         <div class="col-md-6">
             <div class="product-details">
                 <h1 class="product-name">{{ $sanpham->TenSanPham }}</h1>
-                <p class="product-price">Giá: {{ number_format($sanpham->Gia, 3, ",",) }} VNĐ</p>
+                <p class="product-price">Giá: {{ number_format($sanpham->Gia, 0, '', ',') }} VNĐ</p>
                 <div class="product-specs">
                     <h3>Thông số kỹ thuật</h3>
                     <ul>

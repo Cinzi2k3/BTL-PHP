@@ -38,7 +38,7 @@
                                     <td>{{$hdb -> KhachHang -> TenKhachHang}}</td>
                                     <td>{{$hdb -> KhachHang -> SoDienThoai}}</td>
                                     <td>{{$hdb -> KhachHang -> DiaChi}}</td>
-                                    <td>{{number_format ($hdb-> ThanhTien,3,",")}}</td>
+                                    <td>{{number_format ($hdb-> ThanhTien, 0, '', ',')}}</td>
                                     
                                     <td>
                                         {{$hdb -> created_at }}

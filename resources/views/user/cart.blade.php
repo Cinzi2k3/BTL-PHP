@@ -32,7 +32,7 @@
                             
                         </td>
                         <td class="cart_price">
-                            <p>{{number_format ($item -> price,3,",")}}đ</p>
+                            <p>{{number_format ($item -> price, 0, '', ',')}}đ</p>
                         </td>
                         <td class="cart_quantity">
                             <form action="{{ route ('user/update') }}" method="POST">
@@ -49,7 +49,7 @@
                             
                         </td>
                         <td class="cart_total">
-                            <p class="cart_total_price">{{number_format($item -> price * $item -> quantity,3,",")}} đ</p>
+                            <p class="cart_total_price">{{number_format($item -> price * $item -> quantity,0,'',',')}} đ</p>
                         </td>
                         <td class="cart_delete">
                             <form action="{{ route ('cart.removeCart') }}" method= "post">
@@ -72,9 +72,9 @@
                 <div class="total_area">
                     <ul style="list-style: none;">
                         <li>Tổng số lượng sản phẩm <span> {{ Cart::getTotalQuantity()}}</span></li>
-                        <li>Tổng tiền hàng <span> {{number_format(Cart::getTotal(),3,",") }}đ</span></li>
+                        <li>Tổng tiền hàng <span> {{number_format(Cart::getTotal(), 0, '', ',') }}đ</span></li>
                         <li>Gía vận chuyển<span>Miễn phí vận chuyển</span></li>
-                        <li>Tổng thanh toán <span>{{number_format(Cart::getTotal(),3,",") }}đ </span></li>
+                        <li>Tổng thanh toán <span>{{number_format(Cart::getTotal(), 0, '', ',') }}đ </span></li>
                     </ul>
                        
                         <a class="btn btn-default check_out" href="{{route ('checkout')}}"  style="font-size: 16px;">Thủ tục thanh toán</a>

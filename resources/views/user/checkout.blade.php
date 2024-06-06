@@ -52,7 +52,7 @@
                                         <td><a href=""><img src="/Upload/{{$item->attributes->image}}" alt=""></a></td>
                                         <td>{{$item-> name}}</td>
                                         <td>{{$item -> quantity}}</td>
-                                        <td>{{number_format($item -> price ,3,",")}}đ</td>
+                                        <td>{{number_format($item -> price , 0, '', ',')}}đ</td>
                                     </tr>
 
                                      @endforeach
@@ -62,7 +62,7 @@
                         
                             </table>
                             <div style="font-size: 16px;margin-bottom: 20px;" class="checkout__order__total">Tổng số tiền ( {{ Cart::getTotalQuantity()}} sản phẩm ) :
-                                <span >{{number_format(Cart::getTotal(),3,",") }}đ</span>
+                                <span >{{number_format(Cart::getTotal(), 0, '', ',') }}đ</span>
                             </div>
                             <div class="d-grid gap-2 col-6 mx-auto">
                                 <button class="btn btn-outline-primary btn-lg btn-oder" type="submit">Thanh toán</button>
