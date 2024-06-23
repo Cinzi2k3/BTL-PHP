@@ -14,10 +14,9 @@
     <link rel="stylesheet" href="/asset/CSS/chitietsp.css">
     <link rel="stylesheet" href="/asset/CSS/login.css">
     <link rel="stylesheet" href="/asset/CSS/categori.css">
-
-    
     <link rel="stylesheet" href="/asset/font/fontawesome-free-6.0.0-web/css/all.min.css">
-    <title>Điện máy xanh</title>
+    <link href="/dabshot/img/logo/logo.png" rel="icon">
+    <title>Điện Máy Xanh</title>
 </head>
 <body>
     <div class="App">

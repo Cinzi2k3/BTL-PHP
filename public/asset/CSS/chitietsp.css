@@ -13,7 +13,8 @@
 .container__product-img {
     max-width: 400px;
     max-height: 336px;
-    margin:0 20%;
+    margin:0 14%;
+    width: 60%;
 
 }
 .container__product-smallimg {

@@ -41,7 +41,7 @@
                                     <td>{{$ctdh -> MaSanPham }}</td>
                                     <td>{{$ctdh -> sanpham -> TenSanPham}}</td>
                                     <td>{{$ctdh -> SoLuong}}</td>
-                                    <td>{{number_format ($ctdh -> ThanhTien, 0, '', ',')}}</td>
+                                    <td>{{number_format ($ctdh -> ThanhTien, 0, '', ',')}}đ</td>
                                     <td>
                                         <img src="/Upload/{{$ctdh -> sanpham -> Anh}}" style="width: 100px; height: 100px;" alt="">
                                     </td>

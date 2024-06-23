@@ -16,9 +16,7 @@ class CartController extends Controller
     public function cart(){
         $loaisp =  LoaiSanPhamModel::all();
         $cartItems = \Cart::getContent(); //  lấy toàn bộ nội dung của giỏ hàng hiện tại.
-        // dd(
-        //     $cartItems 
-        // );
+        // dd($cartItems);
         return view('user/cart', ['loaisp' => $loaisp,'cartItems' => $cartItems]);
     }
 
@@ -81,7 +79,7 @@ class CartController extends Controller
 
     public function checkout(){
         $loaisp =  LoaiSanPhamModel::all();
-        $cartItems = \Cart::getContent();
+        $cartItems = \Cart::getContent(); //lấy toàn bộ dữ liệu giỏ hàng lưu vào cartItems
         // dd($cartItems);
         foreach($cartItems as $item) {
             $ctk = ChiTietKho::where('MaSanPham', $item->id) -> first();

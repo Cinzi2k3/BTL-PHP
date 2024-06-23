@@ -19,7 +19,7 @@
                     <tr>
                         <td>{{ $donhang->MaDonHang }}</td>
                         <td>{{$donhang -> created_at}}</td>
-                        <td>{{number_format ($donhang-> ThanhTien, 0, '', ',')}}</td>
+                        <td>{{number_format ($donhang-> ThanhTien, 0, '', ',')}}đ</td>
                         <td>
                             @if($donhang->TrangThai == 0)
                                 Đang xử lý

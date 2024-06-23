@@ -455,8 +455,9 @@
 .Footer hr {
     border: 0.5px solid var(--black-coler);
     background-color: var(--black-coler);
-    width: 60px;
+    width: 150px;
     margin-top: 10px;
+
 }
 .Footer-list {
     list-style: none;

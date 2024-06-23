@@ -5,37 +5,12 @@
 @section('/user/content')
 <div class="container-sp">
     <div class="container">
-        <div class="container-sp__link ">
-            <a href="/">Trang chủ</a>
-            <i class="container-sp__icons fa-solid fa-chevron-right"></i>
-            <!-- <a href="" style="color: black">Tivi SamSung</a> -->
-        </div>
         <div class="container-sp__product">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                     <div class="container__product-bigimg">
                         <img class="container__product-img" src="/Upload/{{$sanpham -> Anh}}" >
                     </div>
-                    <!-- <div class="container__product-smallimg">
-                        <div class="container__product-listimg" style="margin: 0px 3px 0px 0px;">
-                            <img src="/asset/IMG/sanpham1.jpg" class="container__product-img1">
-                        </div>
-                        <div class="container__product-listimg">
-                            <img src="/asset/IMG/sanpham2.jpg" class="container__product-img1">
-                        </div>
-                        <div class="container__product-listimg">
-                            <img src="/asset/IMG/sanpham3.jpg" class="container__product-img1">
-                        </div>
-                        <div class="container__product-listimg">
-                            <img src="/asset/IMG/sanpham4.jpg" class="container__product-img1">
-                        </div>
-                        <div class="container__product-listimg">
-                            <img src="/asset/IMG/sanpham5.jpg" class="container__product-img1">
-                        </div>
-                        <div class="container__product-listimg">
-                            <img src="/asset/IMG/sanpham6.jpg" class="container__product-img1">
-                        </div>
-                    </div> -->
                     <div class="container__product-content">
                         <ul> <h4>Đặc điểm nổi bật</h4>
                             <li>{!! strip_tags(explode("\n", $sanpham->Mota)[0]) !!}</li>
@@ -252,7 +227,7 @@
                                 <div class="Home-product-item__price">
                                     {{-- <span class="Home_product-item__price-old">13.900.000đ</span>
                                     <span class="Home_product-item__price-percent">-14%</span> --}}
-                                    <span class="Home_product-item__price-curent" >{{number_format ($dssp->Gia, 0, '', ',')}}</span>
+                                    <span class="Home_product-item__price-curent" >{{number_format ($dssp->Gia, 0, '', ',')}}đ</span>
                                 </div>
                                 <div class="Home-product-item__action">
                                     <div class="Home-product-item__rating">

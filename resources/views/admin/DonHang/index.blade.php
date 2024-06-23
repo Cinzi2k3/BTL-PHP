@@ -60,7 +60,7 @@
                                     <td>{{$dh ->khachhang -> TenKhachHang}}</td>
                                     <td>{{$dh -> khachhang -> SoDienThoai}}</td>
                                     <td>{{$dh -> khachhang -> DiaChi}}</td>
-                                    <td>{{number_format ($dh -> ThanhTien, 0, '', ',')}}</td>
+                                    <td>{{number_format ($dh -> ThanhTien, 0, '', ',')}}đ</td>
                                     
                                     <td>
                                         {{$dh -> created_at }}

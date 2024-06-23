@@ -11,15 +11,16 @@ class HomeController extends Controller
 {
     public function index(  ){
         $loaisp = LoaiSanPhamModel::all();
-        $sps = SanPhamModel::limit(20) -> get(); // hiển thị số san pham ra man hinh
-        return view('user/index',['loaisp' => $loaisp, 'db' => $sps]);
+        $db = SanPhamModel::limit(20) -> get(); 
+        $spmv = SanphamModel::orderBy('created_at', 'desc') -> limit(20) -> get();
+        return view('user/index',['loaisp' => $loaisp, 'db' => $db ,'spmv' => $spmv]);
        
     }
     
     public function categories( $id=null){
         $loaisp =  LoaiSanPhamModel::all();
-        $sps= SanPhamModel::where ('MaLoai_id', '=',$id) ->get();
-        return view('user/categories',['loaisp' => $loaisp, 'db' => $sps]);
+        $db= SanPhamModel::where ('MaLoai_id', '=',$id) ->get();
+        return view('user/categories',['loaisp' => $loaisp, 'db' => $db]);
     }
 
 
@@ -32,12 +33,7 @@ class HomeController extends Controller
         $sp = $sanpham -> MaLoai_id ;
         // dd($lsp);
         $getlsp=SanphamModel::where('MaLoai_id',$sp)->get();
-
         $loaisp =  LoaiSanPhamModel::all();
-
-        // $thongsokythuat = $sanpham->thongsokythuat->first();
-        // // dd($thongsokythuat);
-        // return view('FptShop/productDetails', [ 'sanpham' => $sanpham, 'thongsokythuat' => $thongsokythuat]);
         return view('user/detail', [ 'loaisp' => $loaisp, 'sanpham' => $sanpham,'getlsp' => $getlsp]);
     }
     public function search (Request $request){

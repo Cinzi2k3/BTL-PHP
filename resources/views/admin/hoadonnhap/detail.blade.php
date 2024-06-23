@@ -38,7 +38,7 @@
                                     <td>{{$dt -> MaSanPham}}</td>
                                     <td>{{$dt -> sanpham -> TenSanPham }}</td>
                                     <td>{{$dt -> SoLuong}}</td>
-                                    <td>{{number_format($dt -> DonGia, 0, '', ',')}}</td>
+                                    <td>{{number_format($dt -> DonGia, 0, '', ',')}}đ</td>
                                     <td>
                                         <img src="/Upload/{{$dt -> sanpham -> Anh}}" alt="" style="width: 100px; height: 100px">
                                     </td>

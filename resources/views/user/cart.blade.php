@@ -4,11 +4,6 @@
 @section('/user/content')
 <section id="cart_items" style="margin-top: 160px;font-size: 16px;">
     <div class="container">
-        <div class="container-sp__link " style="margin-top: 20px;margin-bottom:20px ;">
-            <a href="/">Trang chủ</a>
-            <i class="container-sp__icons fa-solid fa-chevron-right"></i>
-            <!-- <a href="" style="color: black">Tivi SamSung</a> -->
-        </div>
         <div class="table-responsive cart_info" style="overflow: hidden;">
             <table class="table table-condensed">
                 <thead>
@@ -18,18 +13,17 @@
                         <td class="price">Giá</td>
                         <td class="quantity">Số Lượng</td>
                         <td class="total">Tổng Tiền</td>
-                        <td></td>
+                        <td>Chức năng</td>
                     </tr>
                 </thead>
                 <tbody id="mycart">
                     @foreach($cartItems as $item)
                     <tr >
                         <td class="cart_product">
-                            <a href=""><img src="/Upload/{{$item->attributes->image}}" alt="" style="width: 120px;margin-right:40px;"></a>
+                            <a href="{{route('detail', $item -> id)}}"><img src="/Upload/{{$item->attributes->image}}" alt="" style="width: 120px;margin-right:70px;"></a>
                         </td>
-                        <td class="cart_description"></td>
-                            <h4><a href="">{{$item -> name}}</a></h4>
-                            
+                        <td class="cart_description">
+                            <h4><a href="{{route('detail', $item -> id)}}">{{$item -> name}}</a></h4>    
                         </td>
                         <td class="cart_price">
                             <p>{{number_format ($item -> price, 0, '', ',')}}đ</p>
