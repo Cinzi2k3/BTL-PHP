@@ -25,6 +25,8 @@
                                 Đang xử lý
                             @elseif($donhang->TrangThai == 1)
                                 Đã xác nhận
+                            @elseif($donhang->TrangThai==2)
+                                Đã hủy
                             @endif
                         </td>
                         <td><a href="{{route ('admin.donhang.chitietdonhang', $donhang->MaDonHang) }}" class="btn btn-warning" style="margin-right: 16px">

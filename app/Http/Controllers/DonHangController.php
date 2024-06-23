@@ -38,7 +38,7 @@ class DonHangController extends Controller
         return view('admin.donhang.chitietdonhang', ['ctdh' => $ctdh]);
     }
     
-    public function OderConfirm(){
+    public function xacnhan(){
         $dh = DonHang::where('TrangThai', '=', 1) -> get();
         foreach($dh as $dhcf){
             $dhcf -> TrangThai = 'Đã xác nhận';
@@ -47,7 +47,7 @@ class DonHangController extends Controller
         return view('admin.donhang.donhangdaxacnhan', ['dh' => $dh]);
     }
 
-    public function OderUnConfirm(){
+    public function xuly(){
         $dh = DonHang::where('TrangThai', '=', 0) -> get();
         // dd($dh);
         foreach($dh as $dhucf){
@@ -57,7 +57,7 @@ class DonHangController extends Controller
         return view('admin.donhang.donhangchuaxacnhan', ['dh' => $dh]);
     }
 
-    public function ConfirmCheckout(string $id){
+    public function checkout(string $id){
         $db = DonHang::all();
 
         
@@ -111,7 +111,7 @@ class DonHangController extends Controller
             $dh -> save();
 
             session()->flash('success', 'Thanh toán thành công');
-            return $this -> ViewOder($id);
+            return redirect() -> route('admin.donhang.index');
         
         }
         else{
@@ -122,20 +122,19 @@ class DonHangController extends Controller
 
     }
 
-    public function CancelCheckout(string $id){
+    public function huy(string $id){
 
         $dh = DonHang::find($id);
         if($dh->TrangThai == 0){
             $dh -> TrangThai = 2;
             $dh -> save();
-            session()->flash('sucess', 'Đơn hàng đã được hủy');
+            session()->flash('success', 'Đơn hàng đã được hủy');
 
         }
         else{
             session()->flash('error', 'Vui lòng kiểm tra lại ');
 
         }
-
         return redirect()->route('admin.donhang.index');
 
     }
@@ -150,16 +149,6 @@ class DonHangController extends Controller
         return $ctk -> SoLuong;        
 
         
-    }
-
-    public function ViewOder(string $id) {
-
-        $dh = DonHang::find($id);
-        
-
-        // dd($dh);
-        $ctdh = ChiTietDonHang::where('MaDonHang', $id)->get();
-        return view('admin.donhang.viewoder', ['dh' => $dh, 'ctdh' => $ctdh]); 
     }
 
 }

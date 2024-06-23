@@ -73,10 +73,10 @@
       </a>
       <div id="collapseTable" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          {{-- <h6 class="collapse-header">Tables</h6> --}}
           <a class="collapse-item" href="{{ route ('admin.thongke.index') }}">Theo ngày</a>
           <a class="collapse-item" href="{{ route ('admin.thongke.theothang') }}">Theo tháng</a>
           <a class="collapse-item" href="{{ route ('admin.thongke.khachhang') }}">Theo khách hàng</a>
+          <a class="collapse-item" href="{{ route ('admin.thongke.hoadon') }}">Nhập hàng</a>
         </div>
       </div>
     </li>

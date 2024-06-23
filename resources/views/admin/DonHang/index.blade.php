@@ -73,7 +73,7 @@
                                         </div>
                                         
                                         <div style="margin-left: 10px">
-                                            <form action="{{route ('admin.donhang.ConfirmCheckout', $dh -> MaDonHang)}}" method="post">
+                                            <form action="{{route ('admin.donhang.checkout', $dh -> MaDonHang)}}" method="post">
                                                 @csrf
                                                 <button class="btn btn-success" type="submit" onclick="return confirm('Xác nhận thanh toán đơn hàng')">
                                                     <i class="fa fa-solid fa-check"></i>
@@ -85,7 +85,7 @@
                                         
 
                                         <div style="margin-left: 10px">
-                                            <form action="{{route ('admin.donhang.CancelCheckout', $dh -> MaDonHang ) }}" method="post">
+                                            <form action="{{route ('admin.donhang.huy', $dh -> MaDonHang ) }}" method="post">
                                                 @csrf
                                                 <button class="btn btn-danger" type="submit" onclick="return confirm('Bạn đông ý hủy đơn hàng')">
                                                     <i class="fa fa-solid fa-ban"></i>

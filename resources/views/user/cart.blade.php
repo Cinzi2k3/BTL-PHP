@@ -33,11 +33,8 @@
                                 @csrf
                                 <div class="cart_quantity_button" >
                                     <input type="hidden" value="{{$item -> id}}" name="id">
-                                    {{-- <a class="cart_quantity_up"  href=""> + </a> --}}
                                     <input style="width:80px;height: 33px;"  class="cart_quantity_input" type="number" name="quantity" value="{{$item -> quantity}}" autocomplete="off" size="1">
-                                    {{-- <a class="cart_quantity_down"  href=""> - </a> --}}
                                     <button typpe="submit" class="btn btn-default update" href="" style="font-size: 16px;margin:0px;">Cập nhật</button>
-                                    {{-- <button type="submit" class="btn-update">update</button> --}}
                                 </div>
                             </form>
                             

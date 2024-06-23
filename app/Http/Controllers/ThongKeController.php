@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Usser\HoaDonBan;
 use App\Models\Usser\ChiTietHoaDonBan;
 use App\Models\Usser\LoaiSanPhamModel;
+use App\Models\Usser\NhaCungCap;
 use DB;
 
 class ThongKeController extends Controller
@@ -68,6 +69,30 @@ class ThongKeController extends Controller
 
         return view('admin.thongke.khachhang', ['kh' => $kh]);
     }
+    public function hoadon()
+{
+    $cc = DB::table('hoadonnhap')
+        ->join('chitiethoadonnhap', 'hoadonnhap.MaHoaDonNhap', '=', 'chitiethoadonnhap.MaHoaDonNhap')
+        ->join('nhacungcap', 'hoadonnhap.MaNhaCungCap', '=', 'nhacungcap.MaNhaCungCap')
+        ->join('sanpham', 'chitiethoadonnhap.MaSanPham', '=', 'sanpham.MaSanPham')
+        ->select(
+            'nhacungcap.TenNhaCungCap',
+            'nhacungcap.DiaChi',
+            'sanpham.TenSanPham',
+            'chitiethoadonnhap.DonGia',
+            DB::raw('SUM(chitiethoadonnhap.soluong) as SoLuongDaNhap'),
+            DB::raw('SUM(chitiethoadonnhap.soluong * chitiethoadonnhap.DonGia) as ThanhTien')
+        )
+        ->groupBy('nhacungcap.MaNhaCungCap', 'sanpham.MaSanPham','chitiethoadonnhap.DonGia')
+        ->orderBy('ThanhTien', 'desc')
+        ->get();
+
+    return view('admin.thongke.hoadon', ['cc' => $cc]);
+}
+
+
+    
+    
 
     
     

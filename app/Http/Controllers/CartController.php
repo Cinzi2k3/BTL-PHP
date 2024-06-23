@@ -68,15 +68,6 @@ class CartController extends Controller
     }
 
 
-    // public function clearAllCart()
-    // {
-    //     \Cart::clear();
-
-    //     session()->flash('success', 'Xóa giỏ hàng thành công !');
-
-    //     return redirect()->route('user/index');
-    // }
-
     public function checkout(){
         $loaisp =  LoaiSanPhamModel::all();
         $cartItems = \Cart::getContent(); //lấy toàn bộ dữ liệu giỏ hàng lưu vào cartItems
