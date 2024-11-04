@@ -13,7 +13,7 @@ class LoaiSanPhamController extends Controller
         $db = LoaiSanPhamModel::all();
         
         return view('admin.loaisanpham.index', ['db'=> $db]);
-        
+
         
     }
     public function create()
@@ -71,5 +71,6 @@ class LoaiSanPhamController extends Controller
         //
         LoaiSanPhamModel::find($id) -> delete($id);
         return redirect() -> route('admin.loaisanpham.index');
+
     }
 }

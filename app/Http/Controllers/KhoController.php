@@ -15,7 +15,7 @@ class KhoController extends Controller
         return view('admin.kho.index', ['kho'=> $kho]);
     }
     public function create()
-    {
+    {   
         return view('admin.kho.create');
     }
     public function store(Request $request)

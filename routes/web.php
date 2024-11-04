@@ -70,9 +70,9 @@ Route::controller(App\Http\Controllers\DonHangController::class) -> group(functi
     Route::get('/admin/donhang/index', 'index') -> name('admin.donhang.index');
     Route::get('/admin/donhang/chitietdonhang/{id}', 'OderDetail') -> name('admin.donhang.chitietdonhang');
     Route::get('/admin/donhang/xacnhan', 'xacnhan') -> name('admin.donhang.donhangdaxacnhan');
-    Route::get('/admin/donhang/xuly', 'xuly') -> name('admin.donhang.donhangchuaxacnhan');
-    Route::post('/admin/donhang/checkout/{id}', 'checkout') -> name('admin.donhang.checkout') ;
-    Route::post('/admin/donhang/huy/{id}', 'huy') -> name('admin.donhang.huy') ;  
+    Route::get('/admin/donhang/xuly', 'xuly') -> name('admin.donhang.donhangchuaxacnhan'); 
+    Route::post('/admin/donhang/updateStatus/{id}', 'updateStatus') -> name('admin.donhang.updateStatus') ;
+
 
 });
 Route::controller(App\Http\Controllers\KhachHangController::class)->group(function(){

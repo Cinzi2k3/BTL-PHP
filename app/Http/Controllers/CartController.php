@@ -9,6 +9,8 @@ use App\Models\Usser\KhachHang;
 use App\Models\Usser\DonHang;
 use App\Models\Usser\ChiTietDonHang;
 use App\Models\Usser\ChiTietKho;
+use App\Mail\OrderPlaced;
+use Illuminate\Support\Facades\Mail;
 
 class CartController extends Controller
 {
@@ -34,9 +36,6 @@ class CartController extends Controller
 
             
         ]);
-        // $cartItems = \Cart::getContent();
-        // dd($cartItems);
-        // dd(\Cart:: add());
         session()->flash('Success', 'Bạn đã thêm thành công vào giỏ hàng !');
 
         return redirect()->route('user/cart');
@@ -124,6 +123,9 @@ class CartController extends Controller
                 
              
             }
+
+            Mail::to($input['Email'])->send(new OrderPlaced($dh, $khachhang, null)); // Truyền khachhang và null cho kh
+
             \Cart::clear();
 
         }
@@ -153,9 +155,13 @@ class CartController extends Controller
                $ctdh -> ThanhTien = $item -> price;
                $ctdh -> save();
             }
+
+
+            Mail::to($input['Email'])->send(new OrderPlaced($dh, null, $kh)); // Truyền null cho khachhang và kh
+
            \Cart::clear();
 
-           
+
         }
         session()->flash('success', ' Bạn đã đặt hàng thành công!');
        

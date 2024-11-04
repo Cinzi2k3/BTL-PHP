@@ -8,7 +8,7 @@
 @section('admin.content')
 <div class="container-fluid" id="container-wrapper">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Thống kê số lượng nhập</h1>
+        <h1 class="h3 mb-0 text-gray-800">Thống kê nhập hàng</h1>
     
     </div>
 
@@ -23,10 +23,11 @@
                     <table class="table align-items-center table-flush" id="dataTable">
                         <thead class="thead-light">
                             <tr>
+                                <th>STT</th>
                                 <th>Tên nhà cung cấp</th>
                                 <th>Địa Chỉ</th>
                                 <th>Sản phẩm</th>
-                                <th>Gía</th>
+                                <th>Giá</th>
                                 <th>Số Lượng</th>
                                 <th>Thành tiền</th>
                                 
@@ -34,6 +35,7 @@
                         </thead>
                         @foreach($cc as $hd)
                         <tr>
+                            <td>{{$index ++}}</td>
                             <td>{{$hd->TenNhaCungCap}}</td>
                             <td>{{$hd->DiaChi}}</td>
                             <td>{{$hd->TenSanPham}}</td>

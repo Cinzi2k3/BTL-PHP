@@ -1,90 +1,100 @@
 <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-      <div class="sidebar-brand-icon">
-        <img src="/asset/IMG/logoadmin.png">
-      </div>
-      <div class="sidebar-brand-text mx-3">Điện Máy Xanh</div>
-    </a>
-    <hr class="sidebar-divider my-0">
-    <li class="nav-item">
-      <a class="nav-link" href="/TQ">
-      <i class="fas fa-globe"></i>
-        <span>Tổng Quát</span>
-      </a>
-    </li>
-    <hr class="sidebar-divider">
-    <div class="sidebar-heading">
-      Chức năng
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+    <div class="sidebar-brand-icon">
+      <img src="/asset/IMG/logoadmin.png">
     </div>
-    <li class="nav-item">
-      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-        aria-expanded="true" aria-controls="collapseBootstrap">
-        <i class="far fa-fw fa-window-maximize"></i>
-        <span>Quản Lý Sản Phẩm</span>
-      </a>
-      <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-          <a class="collapse-item" href="{{route('admin.loaisanpham.index')}}">Quản lý loại sản phẩm</a>
-          <a class="collapse-item" href="{{route('admin.sanpham.index')}}">Quản lý sản phẩm</a>
-        </div>
+    <div class="sidebar-brand-text mx-3">Điện Máy Xanh</div>
+  </a>
+  <hr class="sidebar-divider my-0">
+  <li class="nav-item">
+    <a class="nav-link" href="/TQ">
+      <i class="fas fa-globe"></i>
+      <span>Tổng Quát</span>
+    </a>
+  </li>
+  <hr class="sidebar-divider">
+  <div class="sidebar-heading">
+    Chức năng
+  </div>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap" aria-expanded="true" aria-controls="collapseBootstrap">
+      <i class="far fa-fw fa-window-maximize"></i>
+      <span>Quản Lý Sản Phẩm</span>
+    </a>
+    <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <a class="collapse-item" href="{{route('admin.loaisanpham.index')}}">Quản lý loại sản phẩm</a>
+        <a class="collapse-item" href="{{route('admin.sanpham.index')}}">Quản lý sản phẩm</a>
       </div>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{{route('admin.hoadonban.index')}}">
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{route('admin.hoadonban.index')}}">
       <i class="fas fa-file-invoice-dollar"></i>
-        <span>Quản lí hóa đơn bán</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{{route('admin.hoadonnhap.index')}}">
+      <span>Quản lí hóa đơn bán</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{route('admin.hoadonnhap.index')}}">
       <i class="fas fa-file-invoice"></i>
-        <span>Quản lí hóa đơn nhập</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{{route('admin.khachhang.index')}}">
-        <i class="fas fa-fw fa-user"></i>
-        <span>Quản lí khách hàng</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{{route('admin.nhacungcap.index')}}">
+      <span>Quản lí hóa đơn nhập</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{route('admin.khachhang.index')}}">
+      <i class="fas fa-fw fa-user"></i>
+      <span>Quản lí khách hàng</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{route('admin.nhacungcap.index')}}">
       <i class="fas fa-truck"></i>
-        <span>Quản lí nhà cung cấp</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{{route('admin.donhang.index')}}">
+      <span>Quản lí nhà cung cấp</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{route('admin.donhang.index')}}">
       <i class="fas fa-shopping-basket"></i>
-        <span>Quản lí đơn hàng</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{{route('admin.kho.index')}}">
+      <span>Quản lí đơn hàng</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{{route('admin.kho.index')}}">
       <i class="fas fa-warehouse"></i>
-        <span>Quản lí kho</span>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true"
-        aria-controls="collapseTable">
-        <i class="fas fa-fw fa-table"></i>
-        <span>Báo Cáo Thống Kê</span>
-      </a>
-      <div id="collapseTable" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-          <a class="collapse-item" href="{{ route ('admin.thongke.index') }}">Theo ngày</a>
-          <a class="collapse-item" href="{{ route ('admin.thongke.theothang') }}">Theo tháng</a>
-          <a class="collapse-item" href="{{ route ('admin.thongke.khachhang') }}">Theo khách hàng</a>
-          <a class="collapse-item" href="{{ route ('admin.thongke.hoadon') }}">Nhập hàng</a>
+      <span>Quản lí kho</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
+      <i class="fas fa-fw fa-table"></i>
+      <span>Báo Cáo Thống Kê</span>
+    </a>
+    <div id="collapseTable" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <a class="collapse-item" data-toggle="collapse" href="#collapseNhapHang" aria-expanded="false" aria-controls="collapseNhapHang">Nhập hàng</a>
+        <div id="collapseNhapHang" class="collapse" data-parent="#collapseTable">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="{{ route('admin.thongke.hoadon') }}">Nhập hàng</a>
+          </div>
+        </div>
+        <!-- Thu Section -->
+        <a class="collapse-item" data-toggle="collapse" href="#collapseThu" aria-expanded="false" aria-controls="collapseThu">Thu</a>
+        <div id="collapseThu" class="collapse" data-parent="#collapseTable">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="{{ route('admin.thongke.index') }}">Theo ngày</a>
+            <a class="collapse-item" href="{{ route('admin.thongke.theothang') }}">Theo tháng</a>
+            <a class="collapse-item" href="{{ route('admin.thongke.khachhang') }}">Theo khách hàng</a>
+          </div>
         </div>
       </div>
-    </li>
-    {{-- <hr class="sidebar-divider"> --}}
-    {{-- <div class="sidebar-heading">
+    </div>
+  </li>
+
+  {{-- <hr class="sidebar-divider"> --}}
+  {{-- <div class="sidebar-heading">
       Examples
     </div> --}}
-    {{-- <li class="nav-item active">
+  {{-- <li class="nav-item active">
       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage" aria-expanded="true"
         aria-controls="collapsePage">
         <i class="fas fa-fw fa-columns"></i>
@@ -106,6 +116,6 @@
         <span>Charts</span>
       </a>
     </li> --}}
-    {{-- <hr class="sidebar-divider"> --}}
-    {{-- <div class="version" id="version-ruangadmin"></div> --}}
-  </ul>
+  {{-- <hr class="sidebar-divider"> --}}
+  {{-- <div class="version" id="version-ruangadmin"></div> --}}
+</ul>
